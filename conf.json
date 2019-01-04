@@ -1,0 +1,16 @@
+{
+    "camera_warm_up_time": 2,
+    "resolution": [640, 480],
+    "fps": 20,
+    "blur_size": [21, 21],
+    "tresh_min_value": 2,
+    "min_contour_area": 5500,
+    "email_address": "MY_EMAIL",
+    "email_password": "MY_PASSWORD",
+    "smtp_server": "smtp.gmail.com",
+    "email_subject": "Security Alert",
+    "min_number_motion": 3,
+    "email_sending_interval": 300,
+    "motion_frame_directory": "./tmp",
+    "local_visualization": true
+}
