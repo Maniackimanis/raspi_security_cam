@@ -192,7 +192,7 @@ with PiCamera(resolution=tuple(project_conf["resolution"]),
                     cv2.imwrite(frame_file_path, frame_array)
                     # Send an email with the motion frame attached
                     send_email(project_conf, motion_frame_timestamp,
-                               frame_file_path)
+                               [frame_file_path])
 
         if project_conf["local_visualization"]:
             cv2.imshow("Security cam", frame_array)
