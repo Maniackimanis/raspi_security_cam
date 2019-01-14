@@ -158,6 +158,8 @@ with PiCamera(resolution=tuple(project_conf["resolution"]),
 
         # Handle motion detection alert
         if motion_detected:
+            # Reset motion detection alert
+            motion_detected = False
             # Compute time elapsed since last email sent
             delta_timestamp = motion_frame_timestamp - email_sent_timestamp
             # If time elapsed is superior than the sending interval threshold
